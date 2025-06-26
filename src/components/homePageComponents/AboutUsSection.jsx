@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function AboutUsSection() {
     return (
-        <section className="bg-base-100 py-16 px-4 lg:px-24 my-20">
+        <section className="bg-base-100 py-16 px-4 lg:px-24 mb-20">
             <div className="max-w-5xl mx-auto text-center">
                 <Fade direction="up">
                     <h2 className="text-5xl font-bold text-primary mb-6">About Us</h2>
@@ -11,7 +11,7 @@ export default function AboutUsSection() {
                     </p>
                 </Fade>
 
-                <Fade direction="up" delay={300}>
+                <Fade direction="up">
                     <p className="mt-6 text-2xl">
                         Our mission is to simplify short-term collaboration by allowing users to match based on <strong>skills</strong>, <strong>budget</strong>, and <strong>deadlines</strong>. We believe in creating a flexible, fair, and fast-paced work environment where both task providers and freelancers can thrive.
                     </p>

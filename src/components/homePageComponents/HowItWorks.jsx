@@ -25,7 +25,7 @@ const steps = [
 
 const HowItWorks = () => {
     return (
-        <section className="max-w-6xl mx-auto px-4 my-20">
+        <section className="max-w-6xl mx-auto px-4 mb-20">
             <Fade direction="up">
                 <h2 className="text-5xl font-bold text-center mb-12 text-primary">
                     How It Works

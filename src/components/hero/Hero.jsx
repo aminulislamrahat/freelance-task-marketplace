@@ -40,7 +40,7 @@ const slides = [
 
 const Hero = () => {
     return (
-        <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] mb-16">
+        <div className="relative w-full h-[70vh] md:h-[80vh] lg:h-[90vh] ">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 navigation

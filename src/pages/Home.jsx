@@ -8,7 +8,7 @@ export const Home = () => {
 
     return (
         <>
-            <div className="relative">
+            <div className="relative mb-20">
                 <Hero />
                 <HeroOverlayCards />
             </div>

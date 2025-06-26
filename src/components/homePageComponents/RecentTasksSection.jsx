@@ -20,8 +20,8 @@ export default function RecentTasksSection() {
     }
 
     return (
-        <section className="bg-base-100 py-12 px-4 lg:px-24">
-            <div className="max-w-11/12 mx-auto bg-base-200 rounded-4xl p-6 lg:p-12">
+        <section className="bg-base-100 px-4 md:px-10 lg:px-36  mb-20">
+            <div className="max-w-full mx-auto bg-base-200 rounded-4xl p-6 lg:p-12">
                 {/* Header */}
                 <Fade direction="down" triggerOnce>
                     <div className="text-center mb-20">
@@ -33,19 +33,19 @@ export default function RecentTasksSection() {
                 </Fade>
 
                 {/* Content: Lottie + Cards */}
-                <div className="flex flex-col lg:flex-row gap-10 xl:gap-x-64 justify-between items-center">
+                <div className="flex flex-col gap-10  justify-between items-center">
                     {/* Lottie Animation */}
-                    <Fade direction="left" >
-                        <div className="w-full xl:mx-20">
+                    <Fade direction="left" triggerOnce>
+                        <div className="w-full xl:mx-auto">
                             <Lottie animationData={taskTimeAnimation} loop={true} />
                         </div>
                     </Fade>
 
                     {/* Cards Grid */}
 
-                    <div className="w-full grid gap-6 xl:gap-12 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto">
+                    <div className="w-full grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4 mx-auto">
                         {tasks.map((task, idx) => (
-                            <Fade direction="right" delay={idx * 100} key={idx} >
+                            <Fade direction="right" triggerOnce delay={idx * 100} key={idx} >
                                 <ProjectCard key={task._id} task={task} />
                             </Fade>
                         ))}
