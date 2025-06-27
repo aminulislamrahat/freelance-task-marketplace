@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router';
 
 const Footer = () => {
     return (
-        //bg-base-300 px-4 md:px-10 lg:px-36 py-3 shadow-md fixed top-0 left-0 w-full z-50
+
         <footer className="bg-base-300 text-base-content px-4 md:px-10 lg:px-36 py-10 text-center">
             <div className="max-w-full mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
 

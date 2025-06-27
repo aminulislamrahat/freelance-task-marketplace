@@ -3,6 +3,7 @@ import HowItWorks from '../components/homePageComponents/HowItWorks';
 import RecentTasksSection from '../components/homePageComponents/RecentTasksSection';
 import HeroOverlayCards from '../components/homePageComponents/HeroOverlayCards';
 import AboutUsSection from '../components/homePageComponents/AboutUsSection';
+import NewsletterSection from '../components/homePageComponents/NewsletterSection';
 
 export const Home = () => {
 
@@ -15,7 +16,7 @@ export const Home = () => {
             <AboutUsSection />
             <RecentTasksSection />
             <HowItWorks />
-
+            <NewsletterSection />
 
         </>
     )

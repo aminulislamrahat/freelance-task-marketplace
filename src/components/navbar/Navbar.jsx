@@ -56,7 +56,28 @@ export default function Navbar() {
                     >
                         Browse Tasks
                     </NavLink>
-                    {user ? (
+                    <NavLink
+                        to='/terms-and-conditions'
+                        className={({ isActive }) =>
+                            isActive
+                                ? 'border-b-2'
+                                : 'cursor-pointer hover:text-primary transition-colors duration-200'
+                        }
+                    >
+                        Terms & Conditions
+                    </NavLink>
+                    <NavLink
+                        to='/privacy-policy'
+                        className={({ isActive }) =>
+                            isActive
+                                ? 'border-b-2'
+                                : 'cursor-pointer hover:text-primary transition-colors duration-200'
+                        }
+                    >
+                        Privacy Policy
+                    </NavLink>
+
+                    {/* {user ? (
                         <>
                             <NavLink
                                 to='/add-task'
@@ -78,16 +99,7 @@ export default function Navbar() {
                             >
                                 My Posted Tasks
                             </NavLink>
-                            {/* <NavLink
-                                to='/my-profile'
-                                className={({ isActive }) =>
-                                    isActive
-                                        ? 'border-b-2'
-                                        : 'cursor-pointer hover:text-primary transition-colors duration-200'
-                                }
-                            >
-                                Profile
-                            </NavLink> */}
+                            
 
                         </>
                     ) : (
@@ -113,7 +125,7 @@ export default function Navbar() {
                                 Register
                             </NavLink>
                         </>
-                    )}
+                    )} */}
                 </div>
 
                 {/* Mobile Hamburger */}
@@ -195,8 +207,12 @@ export default function Navbar() {
                transition-opacity duration-200'
                             >
                                 <li>
+                                    <Link to='/my-dashboard'>Dashboard </Link>
+                                </li>
+                                <li>
                                     <Link to='/my-profile'>Profile ({user?.displayName})</Link>
                                 </li>
+
                                 <li>
                                     <button onClick={handleLogout}>Logout</button>
                                 </li>

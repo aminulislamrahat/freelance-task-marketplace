@@ -2,7 +2,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function AboutUsSection() {
     return (
-        <section className="bg-base-100 py-16 px-4 lg:px-24 mb-20">
+        <section className="bg-base-100  px-4 lg:px-24 mb-20">
             <div className="max-w-5xl mx-auto text-center">
                 <Fade direction="up">
                     <h2 className="text-5xl font-bold text-primary mb-6">About Us</h2>
