@@ -34,7 +34,7 @@ export default function BrowseTaskList() {
     }
 
     return (
-        <div className="min-h-screen bg-base-200 py-10 px-4 lg:px-24">
+        <div className="min-h-screen bg-base-200 py-20 px-4 md:px-10 lg:px-36">
             <title>Browse Tasks</title>
             <h1 className="text-5xl font-bold text-center mb-10 text-primary">
                 Browse All Tasks

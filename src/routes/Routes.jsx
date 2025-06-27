@@ -16,6 +16,8 @@ import MyTaskList from "../components/myTask/MyTaskList";
 import ProjectEdit from "../components/projects/ProjectEdit";
 import ProjectDetails from "../components/projects/ProjectDetails";
 import BrowseTaskList from "../components/browseTask/BrowseTaskList";
+import DashboardLayout from "../layouts/DashboardLayout ";
+import DashboardHome from "../components/dashboard/DashboardHome";
 
 export const Routes = createBrowserRouter([
     {
@@ -52,6 +54,11 @@ export const Routes = createBrowserRouter([
 
             },
             {
+                path: "mobile-dashboard",
+                element: <PrivateRoute><DashboardHome /></PrivateRoute>
+
+            },
+            {
                 path: "/task-details/",
                 children: [
 
@@ -84,6 +91,19 @@ export const Routes = createBrowserRouter([
 
 
         ],
+    },
+
+    // ✅ Dashboard Layout (Private Route)
+    {
+        path: "/dashboard",
+        element: <PrivateRoute><DashboardLayout /></PrivateRoute>,
+        children: [
+            { index: true, element: <DashboardHome /> },
+            { path: "tasks", element: <BrowseTaskList /> },
+            { path: "add-task", element: <ProjectCreate /> },
+            { path: "my-posted-task", element: <MyTaskList /> },
+            { path: "profile", element: <MyProfile /> }
+        ]
     },
     {
         path: "/*",

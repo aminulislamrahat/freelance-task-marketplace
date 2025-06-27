@@ -207,7 +207,7 @@ export default function Navbar() {
                transition-opacity duration-200'
                             >
                                 <li>
-                                    <Link to='/my-dashboard'>Dashboard </Link>
+                                    <Link to='/dashboard'>Dashboard </Link>
                                 </li>
                                 <li>
                                     <Link to='/my-profile'>Profile ({user?.displayName})</Link>
@@ -293,12 +293,20 @@ export default function Navbar() {
                     {user ? (
                         <>
                             <NavLink
+                                to='/mobile-dashboard'
+                                onClick={() => setMenuOpen(false)}
+                                className='block px-2 py-1 hover:text-primary border-b-2'
+                            >
+                                Dashboard
+                            </NavLink>
+                            <NavLink
                                 to='/add-task'
                                 onClick={() => setMenuOpen(false)}
                                 className='block px-2 py-1 hover:text-primary border-b-2'
                             >
                                 Add-task
                             </NavLink>
+
                             <NavLink
                                 to='/my-task'
                                 onClick={() => setMenuOpen(false)}
